@@ -1,3 +1,22 @@
 body{
-    background-color: lightgrey
+    margin: 0;
+    padding: 0  ;
+    background-color: lightgrey;
 }
+
+h1{
+    text-align: center;
+}
+
+.login-container{
+    width: 40%;
+    margin: 10% 40%;
+}
+
+input {
+    margin: 0 0 20px 0;
+}
+
+
+
+
