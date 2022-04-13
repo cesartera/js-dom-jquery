@@ -89,7 +89,49 @@ for(i=0; i<produtos.length; i++){
     descricaoProduto.innerText = produtos[i].descricao;
     divProduto.appendChild(descricaoProduto);
 
+    let removerProduto = document.createElement('p');
+    removerProduto.innerText = "Remover";
+    removerProduto.addEventListener('mouseover', mudarCor)
+    removerProduto.addEventListener('click', deletarProduto)
+    divProduto.appendChild(removerProduto);
+
     galeriaDeProdutos.appendChild(divProduto);
 }
 
+function mudarCor() {
+    this.setAttribute('class', 'vermelho');
+}
 
+function deletarProduto() {
+    this.parentNode.remove();
+}
+
+
+let $header = $("h1");
+console.log($header);
+
+let $kindle = $('#prod002');
+console.log($kindle);
+
+$kindle.html('<p>Kindle Ger 10</p>');
+
+$header.attr('id', 'meuID')
+
+$('#galeria-de-produtos').append('<h3>Echo Studio</h3>')
+
+
+
+
+
+
+
+//Remover Elementos
+// document.getElementById('prod004').remove();
+
+//Remover elementos em uma lista
+// let lista = document.getElementById('galeria-de-produtos').childNodes;
+// console.log(lista);
+
+// lista[1].remove();
+
+//Adicionar Eventos
